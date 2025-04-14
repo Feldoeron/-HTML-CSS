@@ -1,0 +1,59 @@
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    color: #333;  
+}  
+
+.parallax {  
+    /* Замена URL на ваше изображение тропического леса Бали */  
+    background-image: url('https://example.com/tropical-forest-bali.jpg'); /* Используйте реальный URL */  
+    height: 400px; /* Высота области параллакса */  
+    background-attachment: fixed;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-size: cover;  
+}  
+
+.content {  
+    background: rgba(255, 255, 255, 0.9);  
+    padding: 20px;  
+}  
+
+header {  
+    text-align: center;  
+}  
+
+h1 {  
+    margin: 0;  
+}  
+
+main {  
+    padding: 20px;  
+}  
+
+.about, .contact {  
+    background: white;  
+    padding: 15px;  
+    margin: 10px 0;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);  
+}  
+
+h2 {  
+    color: #0077cc;  
+}  
+
+footer {  
+    text-align: center;  
+    padding: 10px;  
+    background: #0077cc;  
+    color: white;  
+}  
+
+/* Мобильные стили */  
+@media (max-width: 600px) {  
+    .parallax {  
+        height: 200px; /* Уменьшаем высоту для мобильных */  
+    }  
+}  

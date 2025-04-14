@@ -1,0 +1,71 @@
+body {  
+    font-family: 'Roboto', sans-serif; /* Заменили на современный шрифт Roboto */  
+    margin: 0;  
+    padding: 0;  
+    color: #333;  
+}  
+
+.parallax {  
+    height: 400px; /* Высота области параллакса */  
+    background-attachment: fixed;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    transition: transform 0.1s; /* Плавный переход для эффекта поворота */  
+}  
+
+.first {  
+    background-image: url('https://s1.1zoom.ru/big3/774/Ireland_Donegal_Bay_Crag_Moss_Clouds_549813_4805x2700.jpg'); /* Первое изображение с параллаксом */  
+    background-attachment: fixed; /* Параллакс-эффект для первого изображения */  
+}  
+
+.second {  
+    background-image: url('https://img.goodfon.ru/original/3200x1200/6/d6/saken-streymoy-faroe-islands-very-small-village.jpg'); /* Второе изображение с параллаксом */  
+}  
+
+.content {  
+    background: rgba(255, 255, 255, 0.85); /* Полупрозрачный фон для текста */  
+    padding: 20px;  
+    border-radius: 5px; /* Добавлено для скругления углов */  
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Увеличена тень для лучшей читаемости текста */  
+    position: relative; /* Дополнительно для контекста */  
+    z-index: 2; /* Обеспечивает, что блок будет поверх фона */  
+}  
+
+header {  
+    text-align: center;  
+}  
+
+h1 {  
+    margin: 0;  
+}  
+
+main {  
+    padding: 20px;  
+}  
+
+.about, .contact {  
+    background: rgba(255, 255, 255, 0.95); /* Полупрозрачный белый фон для разделов */  
+    padding: 15px;  
+    margin: 10px 0;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Увеличена тень для лучшей читаемости текста */  
+}  
+
+h2 {  
+    color: #0077cc;  
+}  
+
+footer {  
+    text-align: center;  
+    padding: 10px;  
+    background: #0077cc;  
+    color: white;  
+}  
+
+/* Мобильные стили */  
+@media (max-width: 600px) {  
+    .parallax {  
+        height: 200px; /* Уменьшаем высоту для мобильных устройств */  
+    }  
+}  
